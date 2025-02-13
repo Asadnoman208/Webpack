@@ -36,6 +36,8 @@ module.exports = {
     path: path.resolve(__dirname, '..', './build'),
     filename: '[name].[contenthash].js',
     clean: true, // Ensure old builds are removed
+    publicPath: '/'  // Ensure correct routing in Vercel
+
   },
   plugins: [
     new HtmlWebpackPlugin({
